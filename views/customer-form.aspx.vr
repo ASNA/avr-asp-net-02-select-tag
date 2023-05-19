@@ -40,7 +40,7 @@ BegClass CustomerForm Partial(*Yes) Access(*Public) Extends(System.Web.UI.Page)
         Disconnect DGDB
     EndSr
 
-    BegFunc ReadSingleRow Type(*Boolean) Access(*Internal)
+    BegFunc ReadSingleRow Type(*Boolean)
         DclSrParm CustomerNumber Like(CMCustNo)
 
         Chain CMastNewL1 Key(CustomerNumber) 

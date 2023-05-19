@@ -354,8 +354,8 @@ tr { vertical-align: top; }
 <td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
 </tr>
 <tr>
-<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; BegFunc ReadSingleRow Type(*Boolean) Access(*Internal)</span></code></td>
-<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; BegFunc ReadSingleRow Type(*Boolean) Access(*Internal)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; BegFunc ReadSingleRow Type(*Boolean) </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; BegFunc ReadSingleRow Type(*Boolean)</span></code></td>
 </tr>
 <tr>
 <td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; DclSrParm CustomerNumber Like(CMCustNo)</span></code></td>
@@ -394,8 +394,8 @@ tr { vertical-align: top; }
 <td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; DclSrParm e Type(System.EventArgs)</span></code></td>
 </tr>
 <tr>
-<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">&nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
 </tr>
 <tr>
 <td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; OpenData() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></code></td>
@@ -406,7 +406,7 @@ tr { vertical-align: top; }
 <td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
 </tr>
 <tr>
-<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; //CMCustNo = Session["customer-number"].ToString()</span></code></td>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; //CMCustNo = Session["customer-number"].ToString()</span></code></td>
 <td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
 </tr>
 <tr>
@@ -422,7 +422,7 @@ tr { vertical-align: top; }
 <td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
 </tr>
 <tr>
-<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
 <td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; //CMCustNo = Session["customer-number"].ToString()</span></code></td>
 </tr>
 <tr>
@@ -434,96 +434,72 @@ tr { vertical-align: top; }
 <td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
 </tr>
 <tr>
-<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; ReadSingleRow(CMCustNo)</span></code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; If (NOT Page.IsPostBack)</span></code></td>
 </tr>
 <tr>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; Unlock CMastNewL1 &nbsp; &nbsp; &nbsp; &nbsp;</span></code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; ReadSingleRow(CMCustNo)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ReadSingleRow(CMCustNo)</span></code></td>
 </tr>
 <tr>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; If NOT ReadSingleRow(CMCustNo) </span></code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; Unlock CMastNewL1 &nbsp; &nbsp; &nbsp; &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Unlock CMastNewL1 &nbsp; &nbsp; &nbsp; &nbsp;</span></code></td>
 </tr>
 <tr>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Response.Redirect(String.Format("custom<wbr>er-number.aspx?nf={0}", CMCustNo))</span></code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; If NOT ReadSingleRow(CMCustNo) </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; If NOT ReadSingleRow(CMCustNo) </span></code></td>
 </tr>
 <tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Response.Redirect(String.Format("custom<wbr>er-number.aspx?nf={0}", CMCustNo))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Response.Redirect(String.Format("custom<wbr>er-number.aspx?nf={0}", CMCustNo))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; EndIf </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EndIf </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; If (NOT Page.IsPostBack)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; If (NOT Page.IsPostBack)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AssignFieldsToUI()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AssignFieldsToUI()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; Else</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Else</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Called subsequent times that the page is displayed.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Called subsequent times that the page is displayed.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; EndIf</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EndIf</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; Else</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
 <td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; EndIf </span></code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; If (NOT Page.IsPostBack)</span></code></td>
-<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; If (NOT Page.IsPostBack)</span></code></td>
-</tr>
-<tr>
-<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">AssignFieldsToUI()</span></code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">ReadSingleRow(CMCustNo)</span>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Else</span></code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Unlock CMastNewL1 &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; If NOT ReadSingleRow(CMCustNo) </span>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Response.Redirect(String.Format("custom<wbr>er-number.aspx?nf={0}", CMCustNo))</span>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EndIf </span>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; If (NOT Page.IsPostBack)</span>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">AssignFieldsToUI()</span></code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Else</span></code></td>
-</tr>
-<tr>
-<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span></code></td>
-<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span></code></td>
-</tr>
-<tr>
-<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Called subsequent times that the page is displayed.</span></code></td>
-<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Called subsequent times that the page is displayed.</span></code></td>
-</tr>
-<tr>
-<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span></code></td>
-<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span></code></td>
-</tr>
-<tr>
-<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">EndIf</span>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">EndIf</span>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; Else</span>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
-</tr>
-<tr>
-<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
-<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; EndIf </span>&nbsp;</code></td>
 </tr>
 <tr>
 <td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; EndSr</span></code></td>
@@ -554,7 +530,7 @@ tr { vertical-align: top; }
 <td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; field_CMCity.Text = CMCity</span></code></td>
 </tr>
 <tr>
-<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">field_CMState.Text = CMState.Trim()</span></code></td>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">field_CMState.Text = CMState.Trim()</span></code></td>
 <td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">// </span><span style="color: #000000; background-color: #efcb05; ">field_CMState.Text = CMState.Trim()</span></code></td>
 </tr>
 <tr>
@@ -578,7 +554,7 @@ tr { vertical-align: top; }
 <td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; field_CMPhone.Text = CMPhone</span></code></td>
 </tr>
 <tr>
-<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
 <td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
 </tr>
 <tr>
@@ -646,7 +622,7 @@ tr { vertical-align: top; }
 <td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; CMCity = field_CMCity.Text.Trim()</span></code></td>
 </tr>
 <tr>
-<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">CMState = field_CMState.Text.Trim()</span></code></td>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">CMState = field_CMState.Text.Trim()</span></code></td>
 <td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">// </span><span style="color: #000000; background-color: #efcb05; ">CMState = field_CMState.Text.Trim()</span></code></td>
 </tr>
 <tr>
@@ -686,7 +662,7 @@ tr { vertical-align: top; }
 <td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; CMPhone = field_CMPhone.Text</span></code></td>
 </tr>
 <tr>
-<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
 <td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
 </tr>
 <tr>
