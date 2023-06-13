@@ -47,6 +47,15 @@ BegClass CustomerForm Partial(*Yes) Access(*Public) Extends(System.Web.UI.Page)
         LeaveSr CMastNewL1.IsFound()
     EndFunc
 
+    BegSr LoadStateList
+        DclFld sl Type(USStatesList) New(DGDB)
+
+        field_CMState.DataTextField  = "Text"
+        field_CMState.DataValueField = "Value"
+        field_CMState.DataSource = sl.GetList()
+        field_CMState.DataBind()
+    EndSr 
+
     BegSr Page_Load Access(*Private) Event(*This.Load)
         DclSrParm sender Type(*Object)
         DclSrParm e Type(System.EventArgs)
@@ -65,13 +74,8 @@ BegClass CustomerForm Partial(*Yes) Access(*Public) Extends(System.Web.UI.Page)
                 Response.Redirect(String.Format("customer-number.aspx?nf={0}", CMCustNo))
             EndIf 
 
-            If (NOT Page.IsPostBack)
-                AssignFieldsToUI()
-            Else
-            //
-            // Called subsequent times that the page is displayed.
-            //
-            EndIf
+            LoadStateList()
+            AssignFieldsToUI()
         Else
 
         EndIf 
@@ -89,14 +93,8 @@ BegClass CustomerForm Partial(*Yes) Access(*Public) Extends(System.Web.UI.Page)
         field_CMFax.Text = CMFax
         field_CMPhone.Text = CMPhone
 
-        StatesList = (*New USStatesList(DGDB)).GetList()
-
-        field_CMState.DataTextField  = "Text"
-        field_CMState.DataValueField = "Value"
-
         field_CMState.DataSource = StatesList
         field_CMState.DataBind()
-
         field_CMState.SelectedValue = CMState
     EndSr
 
@@ -105,7 +103,7 @@ BegClass CustomerForm Partial(*Yes) Access(*Public) Extends(System.Web.UI.Page)
         CMName = field_CMName.Text.Trim()
         CMAddr1 = field_CMAddr1.Text.Trim()
         CMCity = field_CMCity.Text.Trim()
-        // CMState = field_CMState.Text.Trim()
+        CMState = field_CMState.SelectedValue()
         CMCntry = field_CMCntry.Text.Trim()
         CMPostCode = field_CMPostCode.Text
         If field_CMActive.Checked 

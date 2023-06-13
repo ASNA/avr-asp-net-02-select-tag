@@ -30,7 +30,17 @@ BegClass USStatesList Access(*Public) Extends(System.Object)
         DoWhile (NOT States.IsEof)
             // Either of these may need a ToString() and/or Trim(), 
             // depending on your data.
-            Result.Add(*New ListItem(States_State.Trim(), States_Abbrev))
+            DclFld li Type(ListItem) 
+
+            li = *New ListItem()
+            li.Text = States_State
+            li.Value = States_Abbrev 
+
+            Result.Add(li) 
+
+            // Alternatively, do all of that at once without the need for the 
+            // 'li' intermediate variable:
+            // Result.Add(*New ListItem(States_State.Trim(), States_Abbrev))
             Read States
         EndDo 
 
